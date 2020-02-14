@@ -2,7 +2,7 @@
 // Object.create
 
 export default function create(obj) {
-    const newobj = {};
-    newobj.__proto__ = obj;
-    return  newobj;
+    function F(){}
+    F.prototype = obj;
+    return  new F();
 }

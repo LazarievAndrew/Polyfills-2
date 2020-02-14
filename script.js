@@ -63,7 +63,7 @@ console.log(Object.customKeys(beers));
 
 // custom pop
 const popFruits = ['apple', 'cherry', 'banana'];
-console.log('---custom pop----')
+console.log('---custom pop----');
 console.log(popFruits);
 popFruits.customPop();
 console.log(popFruits);
@@ -156,7 +156,7 @@ console.log(reverseFruits);
 // custom join
 console.log('----custom join----');
 const joinFruits = ['apple', 'cherry', 'banana', 'orange', 'kiwi'];
-console.log(joinFruits)
+console.log(joinFruits);
 let joinedFruits = joinFruits.customJoin(', ', 4);
 console.log(joinedFruits);
 
@@ -182,13 +182,14 @@ console.log('----custom sort----');
 // обработчик
 
 const  sortArr = [9, 6, 12, 2, 8];
-console.log(sortArr)
+console.log(sortArr);
 sortArr.customSort();
 console.log(sortArr);
 sortArr.customSort((a,b) => a - b);
 console.log(sortArr);
 sortArr.customSort((a,b) => b - a);
 console.log(sortArr);
+
 
 // custom freeze
 console.log('----custom freeze----');

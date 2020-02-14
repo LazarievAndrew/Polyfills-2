@@ -11,7 +11,7 @@ export default function sort(handler) {
                     this[j] = b;
                     this[j + 1] = a;
                 }
-            } else if (handler(this[j], this[j + 1]) > 0) {
+            } else if (handler(this[j], this[j + 1]) > 0 ) {
                 this[j] = b;
                 this[j + 1] = a;
             }
